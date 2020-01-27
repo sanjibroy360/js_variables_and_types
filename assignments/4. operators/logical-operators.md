@@ -5,32 +5,32 @@
 * [ ] Logical AND operation
 
 ```js
-true  && true; //output
-true  && false;
-false && true;
-false && false;
-"foo" && "bar";
-"bar" && "foo";
-"foo" && "";
-""    && "foo";
-" "   && "John" && "" && false
-false && "Hey" && undefined
-"undefined" && false && 42
+true  && true; // true
+true  && false; // false
+false && true; // false
+false && false; // false
+"foo" && "bar"; // "bar"
+"bar" && "foo"; // "foo"
+"foo" && ""; // ""
+""    && "foo"; // "foo"
+" "   && "John" && "" && false // false
+false && "Hey" && undefined // false
+"undefined" && false && 42 // false
 ```
 
-* [ ] Logical OR operation
+* [ ] Logical OR operationHello World" > "Super Mario
 ```js
-true  || true;
-true  || false;
-false || true;
-false || false;
-"foo" || "bar";
-"bar" || "foo";
-"foo" || "";
-""    || "foo";
-" "   || "John" || "" || false
-false || "Hey" || undefined
-"undefined" || false || 42
+true  || true; // true
+true  || false; // true
+false || true; // true
+false || false; // false
+"foo" || "bar"; // "bar"
+"bar" || "foo"; // "foo"
+"foo" || ""; // ""
+""    || "foo"; // "foo"
+" "   || "John" || "" || false // " "
+false || "Hey" || undefined // "Hey"
+"undefined" || false || 42 // 42
 ```
 
 2. 🥈You have two variables i.e `isGuestOneVeg` and  `isGuestTwoVeg` according to the value using logical && and || opeartor do the following.
@@ -42,6 +42,19 @@ false || "Hey" || undefined
 let isGuestOneVeg = false;
 let isGuestTwoVeg = false;
 // Your code goes here
+
+if(isGuestOneVeg && isGuestTwoVeg)
+{
+    alert("Only offer up vegan dishes.");
+}
+else if(isGuestOneVeg || isGuestTwoVeg)
+{
+    alert("Make sure to offer up some vegan options.");
+}
+
+else {
+    alert("Offer up anything on the menu");
+}
 ```
 
 
@@ -52,9 +65,29 @@ let isGuestTwoVeg = false;
 ```js
 let temperature = 4;
 // Your code goes here
+let a = (32 > temperature ? "It is freezing outside":null) || (110 < temperature ? "It is hot outside":null) || "Go for it. It is pretty nice out";
+
+alert(a);
+
 ```
 
 4. 🎖 Output of this and the reason behind the output.
 ```js
 alert( alert(1) || 2 || alert(3) );
+
+Answer: 
+It will show modal window twice, for 1 and 2. 
+Because alert always returns undefined. 
+
+[eg.
+
+let a = (alert(1)); 
+console.log(a) // undefined ]
+
+So if we replace inner alerts with undefined 
+the expression will look like this -
+
+alert(undefined || 2 || undefined);
+
+As we know that logical OR always searches for first true value so it will iterate untill it gets the first truthy value that is 2. Thats why the first inner alert will also be executed.
 ```
