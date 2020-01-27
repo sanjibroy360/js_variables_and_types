@@ -3,14 +3,14 @@
 var name = "Mark";
 ```
 
-// Here name is a variable which is containing a string typed value.
+// Here name is a variable name which is containing a string type value.
 
 2. Find the error if any
 ```js
   var product cost = 3.45;
 ```
 
-// There will be no gap between the variable name.
+// A variable name should not contain any white space.
 
 3. Write `Right or Wrong` next to the code below.
 
