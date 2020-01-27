@@ -92,7 +92,7 @@ if(johnAge === markAge)
 // Create a new variable and assign the age of john to new variable.
 let newVar = johnAge;
 // Check if john is equal to or greater then mark.
-if(johnAge => markAge)
+if(johnAge >= markAge)
 {
   alert("John is equal to or greater then mark");
 }
