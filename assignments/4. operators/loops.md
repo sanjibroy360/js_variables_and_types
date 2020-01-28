@@ -32,6 +32,14 @@ for(i=0;i<=20;i++)
 
 3. 🎖Write a for loop that will iterate from 0 to 10. For each iteration of the for loop, it will multiply the number by 9 and log the result in console (e.g. "2 * 9 = 18").
 
+
+let i;
+for(i=0;i<=10;i++)
+{
+    console.log(`${i} * 9  =  ${i*9}`);
+}
+
+
 4. 🎖Use a nested for loop to show the tables for every multiplier from 1 to 10 (100 results total).
 (e.g.
 "1 * 1 = 1"
