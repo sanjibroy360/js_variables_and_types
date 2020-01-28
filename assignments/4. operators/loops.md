@@ -13,7 +13,36 @@ const ACCESSORY_PRICE = 9.99;
 
 var bank_balance = 303.91;
 var amount = 0;
+
 // your code goes here
+
+let i;
+let finalAmount=0;
+
+for(i=1;amount<=303.91;i++)
+{
+    amount+=PHONE_PRICE;
+    if(amount < SPENDING_THRESHOLD)
+    {
+        amount+= ACCESSORY_PRICE;
+    }
+}
+
+finalAmount = amount + calculateTax(amount);
+finalAmount = formatAmount(finalAmount);
+console.log(`$${finalAmount}`);
+
+function calculateTax(price)
+{   
+    return ( amoupricent * TAX_RATE);
+}
+
+function formatAmount(price)
+{
+    return price.toFixed(2);
+}
+
+
 ```
  ⛑ Answer of the above will `$334.76`.
 
