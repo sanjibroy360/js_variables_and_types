@@ -16,39 +16,55 @@
   num2 = Number(num2);
   var operation = prompt("What kind of operation you want to perform; enter - Add , Sub , Mul , Div ");
 
-  operations();
+  var num1 = prompt("Enter First Number");
+  num1 = Number(num1);
+  var num2 = prompt("Enter Second Number");
+  num2 = Number(num2);
+  var operation = prompt("What kind of operation you want to perform; enter - Add , Sub , Mul , Div ");
 
-  function Add() {
-    alert(num1+num2);
-  }
-
-  function Mul() {
-    alert(num1 * num2);
-  }
-
-  function Sub() {
-    if(num1<num2) 
+  switch(operation)
     {
-      alert(`Number Two is larger then Number one`);
-    }
-    else 
-    {
-      alert(num1 - num2);
-    }
+      case "Add" : function Add() {
+                    alert(num1+num2);
+                   }
+                   Add();
+                   break;
+      
+      case "Mul" : function Mul() {
+                    alert(num1 * num2);
+                   }
+                   Mul();
+                   break;
+        
+      case "Sub" : function Sub() {
+                    if(num1<num2) 
+                    
+                      alert(`Number Two is larger then Number one`);
+                    
+                    else 
+                    
+                      alert(num1 - num2);
+      
+                    }
+                    Sub();
+                    break;
+       
+     case "Div" :   function Div() {
+                      if(num1<num2) 
+                      {
+                        alert(`Number Two is larger then Number one`);
+                      }
+                      else 
+                      {
+                        alert(num1 / num2);
+                      }
+                    }
+                     Div();
+                    break;
+        
+      default:      alert("Please Entter Valid Operation Name");      
   }
-  
-  function Sub() {
-    if(num1<num2) 
-    {
-      alert(`Number Two is larger then Number one`);
-    }
-    else 
-    {
-      alert(num1 / num2);
-    }
-  }
-  
-
+ 
   ```
 
 2. 🎖Write a if else statement which checks if the status is single `console.log` the message `John is single` or else `John is married`
@@ -179,7 +195,7 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 let marks = prompt("Enter marks");
 marks = Number(marks);
 
-switch(marks)
+switch(true)
 {
   case (marks>90) : alert("AA");
                     break;
