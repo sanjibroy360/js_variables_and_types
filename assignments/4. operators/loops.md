@@ -72,11 +72,14 @@ for(i=1;i<=10;i++)
 // Your code goes here 
 let i;
 let str="";
-for(i=1;i<=10;i++)
+for(i=1;i<=9;i++)
 {
+
     str+=(i!==5)?i+",":i+"\n";
 }
-console.log(str);```
+str+=i;
+console.log(str);
+```
 
 6. 🎖Use a while loop to add up the numbers 1 to 20.
 ```js
@@ -88,7 +91,7 @@ while(i<=20)
     sum+=i;
     i++;
 }
-```
+console.log(sum);```
 
 7. 🎖Use a while loop to print out the even number from 1 to 20. (You'll need Modulus for this. And an IF Statement.)
 ```js
