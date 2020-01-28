@@ -75,7 +75,7 @@ let str="";
 for(i=1;i<=9;i++)
 {
 
-    str+=(i!==5)?i+",":i+"\n";
+    str+=(i!==5)?i+", ":i+"\n ";
 }
 str+=i;
 console.log(str);
@@ -85,11 +85,11 @@ console.log(str);
 ```js
 // Your code goes here
 let sum=0;
-let i=1;
-while(i<=20)
+let i=20;
+while(i)
 {
     sum+=i;
-    i++;
+    i--;
 }
 console.log(sum);```
 
