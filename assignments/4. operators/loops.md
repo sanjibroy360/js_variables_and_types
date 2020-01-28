@@ -23,7 +23,7 @@ var amount = 0;
 let i;
 for(i=0;i<=20;i++)
 {
-    if(i%2==0)
+    if(i%2===0)
         alert(`${i} is even`);
     else 
          alert(`${i} is odd`);
@@ -32,12 +32,15 @@ for(i=0;i<=20;i++)
 
 3. 🎖Write a for loop that will iterate from 0 to 10. For each iteration of the for loop, it will multiply the number by 9 and log the result in console (e.g. "2 * 9 = 18").
 
+```js
 
 let i;
 for(i=0;i<=10;i++)
 {
     console.log(`${i} * 9  =  ${i*9}`);
 }
+
+```
 
 
 4. 🎖Use a nested for loop to show the tables for every multiplier from 1 to 10 (100 results total).
@@ -47,7 +50,7 @@ for(i=0;i<=10;i++)
 "1 * 3 = 3"
 "1 * 4 = 4"
 .... for all 100 results)
-
+``` js 
 let i=1;
 let j=1;
 
@@ -59,6 +62,7 @@ for(i=1;i<=10;i++)
         
     }
 }
+```
 
 5. 🎖Show the following output using one loop.
 ```js
