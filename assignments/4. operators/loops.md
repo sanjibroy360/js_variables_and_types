@@ -6,6 +6,7 @@
  * [ ] Write a function called calculateTax which takes an argument 'amount' and calculates the tax you need to pay.
  * [ ] Write a function named formatAmount which returns you amount in this format '$ 132.45' make the decimal fixed to 2 places.
 ```js
+
 const SPENDING_THRESHOLD = 200;
 const TAX_RATE = 0.08;
 const PHONE_PRICE = 99.99;
@@ -19,7 +20,7 @@ var amount = 0;
 let i;
 let finalAmount=0;
 
-for(i=1;amount<=303.91;i++)
+for(i=1;amount<=bank_balance;i++)
 {
     amount+=PHONE_PRICE;
     if(amount < SPENDING_THRESHOLD)
@@ -32,9 +33,10 @@ finalAmount = amount + calculateTax(amount);
 finalAmount = formatAmount(finalAmount);
 console.log(`$${finalAmount}`);
 
+
 function calculateTax(price)
 {   
-    return ( amoupricent * TAX_RATE);
+    return (price * TAX_RATE);
 }
 
 function formatAmount(price)
