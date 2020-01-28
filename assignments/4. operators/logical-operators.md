@@ -12,8 +12,8 @@ false && false; // false
 "foo" && "bar"; // "bar"
 "bar" && "foo"; // "foo"
 "foo" && ""; // ""
-""    && "foo"; // "foo"
-" "   && "John" && "" && false // false
+""    && "foo"; // ""
+" "   && "John" && "" && false // ""
 false && "Hey" && undefined // false
 "undefined" && false && 42 // false
 ```
@@ -24,13 +24,13 @@ true  || true; // true
 true  || false; // true
 false || true; // true
 false || false; // false
-"foo" || "bar"; // "bar"
-"bar" || "foo"; // "foo"
-"foo" || ""; // ""
+"foo" || "bar"; // "foo"
+"bar" || "foo"; // "bar"
+"foo" || ""; // "foo"
 ""    || "foo"; // "foo"
 " "   || "John" || "" || false // " "
 false || "Hey" || undefined // "Hey"
-"undefined" || false || 42 // 42
+"undefined" || false || 42 // "undefined"
 ```
 
 2. 🥈You have two variables i.e `isGuestOneVeg` and  `isGuestTwoVeg` according to the value using logical && and || opeartor do the following.
