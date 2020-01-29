@@ -65,9 +65,8 @@ else {
 ```js
 let temperature = 4;
 // Your code goes here
-let a = (32 > temperature ? "It is freezing outside":null) || (110 < temperature ? "It is hot outside":null) || "Go for it. It is pretty nice out";
 
-alert(a);
+alert( (temperature < 32 && "freezing") || (temperature > 110 && "Hot") || "Sunny" );
 
 ```
 
