@@ -74,6 +74,6 @@ undefined != null // false
 
 undefined != "Hello" // true
 
-undefined != "undefined" // false
+undefined != "undefined" // true
 
 ```

@@ -24,19 +24,19 @@
 
   switch(operation)
     {
-      case "Add" : function Add() {
+      case "Add" : function add() {
                     alert(num1+num2);
                    }
-                   Add();
+                   add();
                    break;
       
-      case "Mul" : function Mul() {
+      case "Mul" : function mul() {
                     alert(num1 * num2);
                    }
-                   Mul();
+                   mul();
                    break;
         
-      case "Sub" : function Sub() {
+      case "Sub" : function sub() {
                     if(num1<num2) 
                     
                       alert(`Number Two is larger then Number one`);
@@ -46,10 +46,10 @@
                       alert(num1 - num2);
       
                     }
-                    Sub();
+                    sub();
                     break;
        
-     case "Div" :   function Div() {
+     case "Div" :   function div() {
                       if(num1<num2) 
                       {
                         alert(`Number Two is larger then Number one`);
@@ -59,10 +59,10 @@
                         alert(num1 / num2);
                       }
                     }
-                     Div();
+                     div();
                     break;
         
-      default:      alert("Please Entter Valid Operation Name");      
+      default:      alert("Please Entter Valid Operation or Operands Name");      
   }
  
   ```
